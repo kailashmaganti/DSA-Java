@@ -1,0 +1,31 @@
+package Arrays;
+import java.util.Scanner;
+
+public class MinElement 
+
+{
+    public void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of array");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        System.out.println("enter "+n+"elements");
+        for(int i=1;i<=n;i++)
+        {
+            arr[i]=sc.nextInt();
+
+        }
+        int min=arr[0];
+        for(int i=1;i<=n;i++)
+        {
+            if(arr[i]<min)
+            {
+                min=arr[i];
+                System.out.println("the minimum element is "+min);
+            }
+        }
+        sc.close();
+    }
+    
+}
